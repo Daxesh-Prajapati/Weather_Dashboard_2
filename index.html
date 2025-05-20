@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Dashboard</h1>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <!-- Error Message (hidden by default) -->
+      <div id="error-message" class="hidden">
+        City not found. Please try again.
+      </div>
+
+      <!-- Current Weather -->
+      <div id="current-weather" class="hidden">
+        <h2 id="current-city"></h2>
+        <div class="weather-details">
+          <img id="current-icon" src="" alt="Weather Icon" />
+          <div>
+            <p id="current-temp"></p>
+            <p id="current-description"></p>
+            <p id="current-humidity"></p>
+            <p id="current-wind"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forecast (3 Days) -->
+      <div id="forecast" class="hidden">
+        <h2>3-Day Forecast</h2>
+        <div class="forecast-container" id="forecast-container"></div>
+      </div>
+
+      <!-- Search History -->
+      <div id="search-history">
+        <h2>Search History</h2>
+        <ul id="history-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
