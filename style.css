@@ -1,9 +1,21 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     margin: 0;
     padding: 20px;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images//pexels-pixabay-531756.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
 }
+
 
 .container {
     max-width: 800px;
